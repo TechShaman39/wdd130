@@ -1,0 +1,127 @@
+/* CSS Variables */
+:root {
+    --primary-color: #505033;   /* olive green */
+    --secondary-color: #264969; /* deep blue */
+    --accent1-color: #CFCFB4;   /* light beige */
+    --accent2-color: #B4CDE4;   /* light blue */
+}
+
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Georgia', serif;
+    color: var(--secondary-color);
+}
+
+p {
+    color: var(--primary-color);
+    line-height: 1.5;
+}
+
+/* Header Styles */
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+header img {
+    max-width: 200px;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+nav a:hover {
+    background-color: var(--accent2-color);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(207, 207, 180, 0.8); /* semi-transparent accent1 */
+    padding: 10px;
+    margin: 0;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(180, 205, 228, 0.8); /* semi-transparent accent2 */
+    padding: 20px;
+    max-width: 60%;
+}
+
+.hero article img {
+    float: right;
+    max-width: 30%;
+    margin-left: 10px;
+}
+
+/* History Section */
+section {
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: var(--accent1-color);
+}
+
+/* Adventure Section */
+section:last-of-type {
+    background-color: var(--accent2-color);
+    text-align: center;
+}
+
+section:last-of-type img {
+    max-width: 200px;
+    margin: 10px;
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+footer img {
+    max-width: 40px;
+}
+
+/* Remove underlines from social media links */
+footer a {
+    text-decoration: none;
+}
