@@ -1,3 +1,4 @@
+<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -7,61 +8,74 @@
     <meta name="author" content="Pierre Losier-Cote">
     <title>About Us | Pierre's Rafting Company</title>
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
         <img src="images/logo.png" alt="Rafting Company Logo">
+        <h1>Pierre's Rafting Company</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
-    <!-- Main Corpus-->
+    
     <main>
         <div class="hero">
             <img src="images/hero-background.jpg" alt="Rafting adventure on white waters">
-            <h1>Pierre's Rafting Company</h1>
             <article>
                 <img src="images/happy-client.jpg" alt="Happy client enjoying rafting experience">
                 <p>Our mission is to provide fun and safe whitewater rafting experiences that connect people with nature. We will create unforgettable adventures for you that challenge you to your core while maintaining the highest standards of safety.</p>
             </article>
         </div>
         
-        <section>
+        <section class="history">
             <h2>History</h2>
-            <p>Founded a while ago by a group of passionate adventurers, Pierre's Rafting Company bla bla bla  bla bla bla bla bla bla  bla bla bla bla bla bla  bla bla bla bla bla bla  bla bla bla bla bla bla .</p>
+            <p>Founded a while ago by a group of passionate adventurers, Pierre's Rafting Company bla bla bla  bla bla bla bla bla bla  bla bla bla bla bla bla  bla bla bla bla bla bla  bla bla bla bla bla bla.</p>
         </section>
         
-        <section>
+        <section class="adventures">
             <h2>Adventure Awaits You!</h2>
-            <img src="images/rafting1.jpg" alt="Rafting adventure 1">
-            <img src="images/rafting2.jpg" alt="Rafting adventure 2">
-            <img src="images/rafting3.jpg" alt="Rafting adventure 3">
-            <img src="images/rafting4.jpg" alt="Rafting adventure 4">
-            <img src="images/rafting5.jpg" alt="Rafting adventure 5">
+            <div class="gallery">
+                <figure>
+                    <img src="images/rafting1.jpg" alt="Los Dientes del Diablo rafting trip">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting2.jpg" alt="Big Mallard rafting trip">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting3.jpg" alt="Half Day Adventure rafting trip">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting4.jpg" alt="River Rush rafting trip">
+                    <figcaption>River Rush</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting5.jpg" alt="Wild Waters rafting trip">
+                    <figcaption>Wild Waters</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
     
     <footer>
-        <p>&copy; 2025 Pierre's Rafting Company - Pierre Losier-Cote</p>
-        <a href="https://facebook.com">
-            <img src="images/facebook.png" alt="Facebook">
-        </a>
-        <a href="https://twitter.com">
-            <img src="images/twitter.png" alt="Twitter">
-        </a>
-        <a href="https://instagram.com">
-            <img src="images/instagram.png" alt="Instagram">
-        </a>
+        <p>© 2025 Pierre's Rafting Company - Pierre Losier-Cote</p>
+        <div class="social-links">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
     </footer>
 </body>
 </html>
