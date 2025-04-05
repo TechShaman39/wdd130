@@ -1,0 +1,98 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Pierre's Rafting Company for inquiries, reservations, or suggestions. Reach us by phone, email, or our online form.">
+    <meta name="author" content="Pierre Losier-Cote">
+    <title>Contact Us | Pierre's Rafting Company</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo">
+        <h1>Pierre's Rafting Company</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p><strong>Address:</strong> 123 River Road, Rafting Town, RT 12345</p>
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+            <p><strong>Email:</strong> info@pierresrafting.com</p>
+            <iframe src="<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12253.661407339503!2d-115.77663715640239!3d49.78578307799183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sie!4v1743886638300!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Jane Doe smiling">
+                    <figcaption>Jane Doe - Lead Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="John Smith smiling">
+                    <figcaption>John Smith - Safety Coordinator</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Emily River smiling">
+                    <figcaption>Emily River - Customer Service Manager</figcaption>
+                </figure>
+            </div>
+        </section>
+        
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit-contact.php" method="post">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <p><label><input type="radio" name="purpose" value="general" required> General Inquiry</label></p>
+                    <p><label><input type="radio" name="purpose" value="reservation"> Reservation Question</label></p>
+                    <p><label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label></p>
+                </fieldset>
+                <p>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </p>
+                <p>
+                    <label><input type="checkbox" name="newsletter" value="yes"> Please subscribe me to the monthly newsletter</label>
+                </p>
+                <p>
+                    <button type="submit">Submit Your Message</button>
+                </p>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2025 Pierre's Rafting Company - Pierre Losier-Cote</p>
+        <div class="social-links">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>
