@@ -342,6 +342,42 @@ figcaption {
     background-color: var(--accent2-color);
     color: var(--primary-color);
 }
+/* Trips Intro Section */
+.trips-intro {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--accent1-color);
+    margin-bottom: 30px;
+}
+
+.trips-intro h2 {
+    margin-bottom: 10px;
+}
+
+/* Trips List Section with CSS Grid */
+.trips-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--accent2-color);
+    margin-bottom: 30px;
+}
+
+.trip-item {
+    text-align: center;
+}
+
+.trip-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.trip-item h3 {
+    margin: 10px 0;
+}
 
 /* Footer Styles */
 footer {
