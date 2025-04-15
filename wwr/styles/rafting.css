@@ -1,3 +1,4 @@
+/* rafting.css */
 :root {
     --primary-color: #505033;   /* olive green */
     --secondary-color: #264969; /* deep blue */
@@ -64,6 +65,7 @@ nav a:hover {
 .hero {
     position: relative;
     margin-bottom: 30px;
+    min-height: 400px; /* Add minimum height to prevent overlap */
 }
 
 .hero img {
@@ -138,32 +140,7 @@ figcaption {
 /* Features Section with CSS Grid */
 .features {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-    background-color: var(--accent1-color);
-    margin-bottom: 30px;
-}
-
-.feature-item {
-    text-align: center;
-}
-
-.feature-item img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.feature-item h3 {
-    margin: 10px 0;
-}
-
-/* Features Section with CSS Grid */
-.features {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Make responsive */
     gap: 20px;
     padding: 20px;
     background-color: var(--accent1-color);
@@ -248,7 +225,7 @@ figcaption {
     max-width: 600px;
     height: 450px;
     margin-top: 15px;
-    border: none; /* Removed inline style as per instructions */
+    border: none;
 }
 
 .employee-profiles {
@@ -342,6 +319,7 @@ figcaption {
     background-color: var(--accent2-color);
     color: var(--primary-color);
 }
+
 /* Trips Intro Section */
 .trips-intro {
     padding: 20px;
@@ -406,6 +384,16 @@ footer img {
 
 footer a {
     text-decoration: none;
+}
+
+footer a.github-link {
+    color: var(--accent2-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer a.github-link:hover {
+    text-decoration: underline;
 }
 
 footer a.wireframe-link {
