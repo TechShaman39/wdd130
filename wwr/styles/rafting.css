@@ -87,6 +87,15 @@ nav a:hover {
     margin-left: 10px;
 }
 
+.hero h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(180, 205, 228, 0.8);
+    padding: 10px 20px;
+    color: var(--secondary-color);
+}
+
 /* History Section */
 .history {
     padding: 20px;
@@ -124,6 +133,106 @@ figcaption {
     color: var(--primary-color);
     padding: 5px;
     font-weight: 700;
+}
+
+/* Features Section with CSS Grid */
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--accent1-color);
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+.feature-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.feature-item h3 {
+    margin: 10px 0;
+}
+
+/* Features Section with CSS Grid */
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--accent1-color);
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+.feature-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.feature-item h3 {
+    margin: 10px 0;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 20px;
+    background-color: var(--accent2-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.newsletter h2 {
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter p {
+    margin: 15px 0;
+}
+
+.newsletter label {
+    display: block;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.newsletter input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.newsletter button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
 }
 
 /* Contact Page Styles */
@@ -204,6 +313,32 @@ figcaption {
 }
 
 .contact-form button:hover {
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+}
+
+/* Call to Action Section */
+.cta {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+.cta h2 {
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+.cta-button:hover {
     background-color: var(--accent2-color);
     color: var(--primary-color);
 }
